@@ -1,0 +1,2360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analysis of Police Survey Data</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Analysis of Police Survey Data">
+  <meta name="author" content="Ali Arsalan Kazmi">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+      <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='300px' src="assets/img/pcclogo.jpg">
+      </span>
+    </article>
+  </slide>
+    <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/pcclogoSmall.jpg">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Analysis of Police Survey Data</h1>
+    <h2>Presentation for the OPCC, Norfolk</h2>
+    <p>Ali Arsalan Kazmi<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><p>England and Wales Police &amp; Crime Commissioner Elections, 2012 </p></li>
+<li><p>Norfolk Policing Survey: &quot;Making a Difference&quot;</p>
+
+<ul>
+<li>Quantitative &amp; Qualitative questions</li>
+<li>Crime, Anti-social behaviour, Customer Service, etc. </li>
+</ul></li>
+<li><p>Analysis of survey</p>
+
+<ul>
+<li>To gain information on views of people at Norfolk</li>
+<li>Information gained would assist in policy-making </li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Quantitative Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Research Questions</h3>
+
+<ul class = "build incremental">
+<li>Is complaint, x, correlated with age, y? </li>
+<li>What&#39;s the difference between the means of various age groups of respondents? </li>
+<li>What is the frequency distribution of respondents from various districts? </li>
+<li>Is there a causal relationship between age, y, and the type of complaint submitted, x?</li>
+<li>Cluster Analysis: can respondents be grouped based on variables such as x or y?</li>
+<li>etc.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Qualitative Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Research Questions</h3>
+
+<ul>
+<li>Is x correlated with y? </li>
+<li>What&#39;s the difference between the means of various age groups of respondents? </li>
+<li>What is the frequency distribution of respondents from various districts? </li>
+<li>Is there a causal relationship between age and the type of complaint submitted?</li>
+<li>Cluster Analysis: can respondents be grouped based on their characteristic variables?</li>
+<li>etc.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Qualitative Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Research Questions</h3>
+
+<ul>
+<li><del> Is x correlated with y? </del></li>
+<li><del> What&#39;s the difference between the means of various age groups of respondents? </del></li>
+<li><del> What is the frequency distribution of respondents from various districts? </del></li>
+<li><del> Is there a causal relationship between age and the type of complaint submitted? </del></li>
+<li><del> Cluster Analysis: can respondents be grouped based on their characteristic variables? </del></li>
+<li><del> etc. </del></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Qualitative Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Research Questions</h3>
+
+<ul class = "build incremental">
+<li>Which are the most frequent/important words?</li>
+<li>What are the contents of the responses?</li>
+<li>Which responses are similar/dissimilar?</li>
+<li>Which words are related/unrelated?</li>
+<li>What sentiment is expressed in responses?</li>
+<li>etc.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue quote dark" id="slide-6" style="background:;">
+  <article data-timings="">
+    <style>
+.dark q {
+  color: white;
+}
+</style>
+
+<p><q> Everyday language is a part of the human organism and is no less complicated than it.</q> </p>
+
+<p><a href="http://www.gutenberg.org/files/5740/5740-pdf.pdf">Ludwig Wittgenstein</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Qualitative Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Challenges</h3>
+
+<ul class = "build incremental">
+<li><p>Natural Language</p></li>
+<li><p>Synoynmy</p>
+
+<ul>
+<li>Do &#39;theft&#39; and &#39;burglary&#39; have different meanings for our purposes?</li>
+</ul></li>
+<li><p>Polysemy</p>
+
+<ul>
+<li>&#39;Patrol&#39; as noun and verb</li>
+</ul></li>
+<li><p>Domain specific words</p>
+
+<ul>
+<li>&#39;Beat&#39; in the police terminology</li>
+</ul></li>
+<li><p>Words influenced by History/Culture</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Qualitative Data is different...</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Text Mining!</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>But: How?</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11">
+<hgroup>
+  <h2>Text Mining Framework</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img height=450 width=700" src="assets/img/TMOverview.jpg"/></p>
+
+<p>
+<span style="font-size:13px">Obtained from Dr. Beatriz's lecture on Text Mining</span>
+</p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="segue dark" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Phase 1: Text Preprocessing</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Phase 1: Text Preprocessing</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><b>Objective:</b> Apply operations to &#39;reshape&#39; data into a format suitable for Text Mining. </p>
+
+<ul class = "build incremental">
+<li><p>Standardisation</p>
+
+<ul>
+<li>To give a unified format to all data</li>
+</ul></li>
+<li><p>Stopwords Removal</p>
+
+<ul>
+<li>&quot;That&quot;, &quot;this&quot;, &quot;mine&quot;, &quot;should&quot; are not informative</li>
+<li>Domain-specific stopwords</li>
+</ul></li>
+<li><p>Thesaurus</p>
+
+<ul>
+<li>&#39;Bobby&#39; and &#39;Police&#39;</li>
+<li>&#39;Car parks&#39; and &#39;Parking&#39;.</li>
+<li>&#39;Crime&#39; and &#39;Offence&#39;</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Phase 1: Stopwords &amp; Thesaurus</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Example</h3>
+
+<ul>
+<li><b>Document 1:</b>
+<p> This is a vital issue and more bobbies must be on the beat. Increase the beat.</p></li>
+<li><b>Document 2:</b>
+<p> Police needs to solve the problem. Car parks have been taken over by bicycles! Please increase Police beat too! </p></li>
+<li><b>Document 3:</b>
+<p> I am a cyclist and I am proud of it! </p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Phase 1: Stopwords &amp; Thesaurus</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Example</h3>
+
+<ul>
+<li><b>Document 1:</b>
+<p> <span class="red">This is a</span> vital issue <span class="red">and</span>  more <span class="green">bobbies</span>  must be on <span class="red">the</span>  beat. Increase <span class="red">the</span>  beat. </p></li>
+<li><b>Document 2:</b>
+<p> <span class="green">Police</span> needs<span class="red"> to</span> solve<span class="red"> the</span> problem. Car parks <span class="red">have been</span>  taken over by <span class="green">bicycles</span>! Please increase <span class="green">Police</span> beat<span class="red"> too!</span>  </p></li>
+<li><b>Document 3:</b>
+<p> <span class="red">I am a</span> <span class="green">cyclist</span> <span class="red">and I am</span> proud <span class="red">of it</span>! </p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Phase 1: Stopwords &amp; Thesaurus</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Example</h3>
+
+<ul>
+<li><b>Document 1:</b>
+<p> vital issue more police must be on beat increase beat </p></li>
+<li><b>Document 2:</b>
+<p> police needs solve problem car parks taken over by bicycle please increase police beat </p></li>
+<li><b>Document 3:</b>
+<p> bicyclist proud </p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>Section Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><p><b>Text Preprocessing objectives: </b></p>
+
+<ul>
+<li>To standardise textual data found in different formats</li>
+<li>To remove irrelevant/less informative words</li>
+<li>To replace synonymous words with a single word expressing the same meaning</li>
+</ul></li>
+<li><p><b>Text Preprocessing Techniques:</b></p>
+
+<ul>
+<li>Standardisation of documents</li>
+<li>Stopwords&#39; removal</li>
+<li>Thesaurus</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>Phase 2: Feature Generation</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Phase 2: Feature Generation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><b>Objective:</b> Apply operations to generate representations of Textual data.</p>
+
+<ul class = "build incremental">
+<li>Basic unit of representation
+
+<ul>
+<li>Terms (single words, word pairs, phrases)</li>
+<li>Documents/responses</li>
+</ul></li>
+<li>Choose a matrix format to generate from representation units
+
+<ul>
+<li>Term-Document Matrix <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.107.7453&amp;rep=rep1&amp;type=pdf">(Salton et al., 1975)</a></li>
+<li>Term-Affiliations Matrix</li>
+</ul></li>
+<li>Choose settings for matrix
+
+<ul>
+<li>Binary Frequency</li>
+<li>Term Frequency</li>
+<li>Term Frequency X Inverse Document Frequency</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Phase 2: Term-Document Matrix (Binary)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><b> Term-Document Matrix </b>
+
+<ul>
+<li>A representation of textual data in which Terms are represented as rows, and documents(responses) as columns.</li>
+<li>Easily produced automatically.</li>
+<li>Word sequences not accounted for.</li>
+<li><a href="http://en.wikipedia.org/wiki/Statistical_semantics">Statistical Semantics Hypothesis</a> <a href="http://www.mt-archive.info/Weaver-1949.pdf">(Weaver, 1955</a>; <a href="http://furnas.people.si.umich.edu/Papers/FurnasEtAl1983_BSTJ_p1753.pdf">Furnal et al., 1983)</a></li>
+</ul></li>
+<li><b> Binary Frequency </b>
+
+<ul>
+<li>A representation that takes into account the presence/absence of Terms, by using 1s and 0s.</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Phase 2: Term-Document Matrix (Binary)</h2>
+  </hgroup>
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>Words</th>
+<th>Document 1</th>
+<th>Document 2</th>
+<th>Document 3</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>beat</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>bicycle</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>bicyclist</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>car</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>increase</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>issue</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Phase 2: Term-Document Matrix (Term Frequency)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><b> Term-Document Matrix </b>
+
+<ul>
+<li>A representation of textual data in which Terms are represented as rows, and documents as columns.</li>
+<li>Easily produced automatically.</li>
+<li>Word sequences not accounted for.</li>
+<li><a href="http://en.wikipedia.org/wiki/Statistical_semantics">Statistical Semantics Hypothesis</a> <a href="http://www.mt-archive.info/Weaver-1949.pdf">(Weaver, 1955</a>; <a href="http://furnas.people.si.umich.edu/Papers/FurnasEtAl1983_BSTJ_p1753.pdf">Furnal et al., 1983)</a></li>
+</ul></li>
+<li><b> Term Frequency </b>
+
+<ul>
+<li>A representation that takes into account the total number of times a Term occurs in a Document.</li>
+<li>Term importance defined by its frequency</li>
+<li>More frequent words attain greater importance</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Phase 2: Term-Document Matrix (Term Frequency)</h2>
+  </hgroup>
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>Words</th>
+<th>Document 1</th>
+<th>Document 2</th>
+<th>Document 3</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>beat</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>bicycle</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>bicyclist</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>car</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>increase</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>issue</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>Phase 2: Term-Document Matrix (Tf-Idf)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><b> Term-Document Matrix </b>
+
+<ul>
+<li>A representation of textual data in which Terms are represented as rows, and documents as columns.</li>
+<li>Easily produced automatically.</li>
+<li>Word sequences not accounted for.</li>
+<li><a href="http://en.wikipedia.org/wiki/Statistical_semantics">Statistical Semantics Hypothesis</a> <a href="http://www.mt-archive.info/Weaver-1949.pdf">(Weaver, 1955</a>; <a href="http://furnas.people.si.umich.edu/Papers/FurnasEtAl1983_BSTJ_p1753.pdf">Furnal et al., 1983)</a></li>
+</ul></li>
+<li><b> Term Frequency X Inverse Doc. Frequency</b> 
+
+<ul>
+<li>A representation that takes into account the number of times a Term occurs in documents, as well as the total number of Documents in which it occurs.</li>
+<li>Term importance defined by a high Term frequency <strong>and</strong> a low document frequency</li>
+<li>Rare terms in the document collection that possibly <i>define</i> their documents attain greatest importance</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>Phase 2: Term-Document Matrix (Tf-Idf)</h2>
+  </hgroup>
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>Words</th>
+<th>Document 1</th>
+<th>Document 2</th>
+<th>Document 3</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>beat</td>
+<td>0.528</td>
+<td>0.176</td>
+<td>0</td>
+</tr>
+<tr>
+<td>bicycle</td>
+<td>0</td>
+<td>0.4771</td>
+<td>0</td>
+</tr>
+<tr>
+<td>bicyclist</td>
+<td>0</td>
+<td>0</td>
+<td>0.4771</td>
+</tr>
+<tr>
+<td>car</td>
+<td>0</td>
+<td>0.4771</td>
+<td>0</td>
+</tr>
+<tr>
+<td>increase</td>
+<td>0.176</td>
+<td>0.176</td>
+<td>0</td>
+</tr>
+<tr>
+<td>issue</td>
+<td>0.4771</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Phase 2: Term-Affiliations Matrix</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><b> Term-Affiliations Matrix </b>
+
+<ul>
+<li>Also known as Word co-occurrences matrix</li>
+</ul></li>
+<li><b> Term Frequency </b></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>Phase 2: Term-Affiliations Matrix</h2>
+  </hgroup>
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>Words</th>
+<th>beat</th>
+<th>bicycle</th>
+<th>bicyclist</th>
+<th>car</th>
+<th>increase</th>
+<th>issue</th>
+<th>...</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>beat</td>
+<td>5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>...</td>
+</tr>
+<tr>
+<td>bicycle</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>bicyclist</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>car</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>increase</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>...</td>
+</tr>
+<tr>
+<td>issue</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>...</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  <hgroup>
+    <h2>Section Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><b>Feature Generation objectives: </b>
+
+<ul>
+<li>To generate a representation of terms (words, phrases, etc.) and responses/documents</li>
+</ul></li>
+<li><b>Representation can be of different types:  </b>
+
+<ul>
+<li>Term-Document Matrix</li>
+<li>Term-Affiliations Matrix</li>
+<li>etc.</li>
+</ul></li>
+<li><b>To assign importance to terms as required for analysis: </b>
+
+<ul>
+<li>Binary</li>
+<li>Term Frequency</li>
+<li>Term Frequency - Inverse Document Frequency</li>
+<li>etc.</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark" id="slide-29" style="background:;">
+  <hgroup>
+    <h2>Phase 3: Feature Selection</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-30" style="background:;">
+  <hgroup>
+    <h2>Phase 3: Feature Selection</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>There may exist a large number of Terms in a Term Document Matrix (High-Dimensionality)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-31" style="background:;">
+  <hgroup>
+    <h2>Phase 3: Feature Selection</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>There may exist a large number of Terms in a Term Document Matrix (High-Dimensionality)</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Word #</th>
+<th>Words</th>
+<th>Document 1</th>
+<th>Document 2</th>
+<th>Document 3</th>
+<th>...</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>beat</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>2</td>
+<td>bicycle</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>3</td>
+<td>bicyclist</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>...</td>
+</tr>
+<tr>
+<td>4</td>
+<td>car</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>5</td>
+<td>increase</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>6</td>
+<td>issue</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>4573</td>
+<td>zeal</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+</tr>
+</tbody></table>
+
+<ul class = "build incremental">
+<li>Not all of the Terms will be useful
+
+<ul>
+<li>Many Terms only present in a few documents (known as Sparse Terms)</li>
+<li>Unclear how these Terms are related to other, frequently occurring ones</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-32" style="background:;">
+  <hgroup>
+    <h2>Phase 3: Feature Selection</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>There may exist a large number of Terms in a Term Document Matrix (High-Dimensionality)</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Word #</th>
+<th>Words</th>
+<th>Document 1</th>
+<th>Document 2</th>
+<th>Document 3</th>
+<th>...</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>beat</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>2</td>
+<td>bicycle</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>3</td>
+<td>bicyclist</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>...</td>
+</tr>
+<tr>
+<td>4</td>
+<td>car</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>5</td>
+<td>increase</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>6</td>
+<td>issue</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>4573</td>
+<td>zeal</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+</tr>
+</tbody></table>
+
+<ul>
+<li>A large number of Terms poses challenges to efficient computation
+
+<ul>
+<li>In addition to Text Mining operations</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  <hgroup>
+    <h2>Phase 3: Feature Selection</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>There may exist a large number of Terms in a Term Document Matrix (High-Dimensionality)</li>
+</ul>
+
+<table><thead>
+<tr>
+<th>Word #</th>
+<th>Words</th>
+<th>Document 1</th>
+<th>Document 2</th>
+<th>Document 3</th>
+<th>...</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>beat</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>2</td>
+<td>bicycle</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>3</td>
+<td>bicyclist</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>...</td>
+</tr>
+<tr>
+<td>4</td>
+<td>car</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>5</td>
+<td>increase</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>6</td>
+<td>issue</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<td>4573</td>
+<td>zeal</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>...</td>
+</tr>
+</tbody></table>
+
+<ul>
+<li><b> Objective: Focus only on <span style="red">important</span> Terms </b></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>Phase 3: Feature Selection</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>How to measure Feature/Term Importance?</h3>
+
+<ul class = "build incremental">
+<li><p>Depends on the Text Mining operation to be applied and type of data in Term-Document Matrix</p></li>
+<li><p>Term Frequency lowerbounds</p>
+
+<ul>
+<li>Discard all Terms with a value less than a pre-determined lowerbound</li>
+</ul></li>
+<li><p>Term Frequency X Inverse Document Frequency lowerbounds</p>
+
+<ul>
+<li>Discard all Terms with a value less than a pre-determined lowerbound</li>
+</ul></li>
+<li><p>Preset Sparsity level for Terms</p></li>
+<li><p>etc.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-35" style="background:;">
+  <hgroup>
+    <h2>Section Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Not all terms in a Term-Document Matrix will be important</li>
+<li><b>Feature Selection Objective:</b>
+
+<ul>
+<li>To distinguish important terms from unimportant terms</li>
+</ul></li>
+<li>Choice of Feature Selection measure:
+
+<ul>
+<li>Depends on the task (Classification, Clustering) and type of data in Term-Document Matrix</li>
+<li>Term Frequency lowerbounds</li>
+<li>Sparsity level lowerbounds</li>
+<li>etc.</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>Phase 4: Text Mining Operations</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-37" style="background:;">
+  <hgroup>
+    <h2>Text Mining: Research Questions</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Which are the most frequent/important words?</li>
+<li>What are the contents of the responses?</li>
+<li>Which responses are similar/dissimilar?</li>
+<li>Which words are related/unrelated?</li>
+<li>What sentiment is expressed in responses?</li>
+<li>etc.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-38" style="background:;">
+  <hgroup>
+    <h2>Text Mining: Research Questions</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><b>Which are the most frequent/important words?</b></li>
+<li><b>What are the contents of the responses?</b></li>
+<li><span class="silver">Which responses are similar/dissimilar?</span></li>
+<li><b>Which words are related/unrelated?</b></li>
+<li><span class="silver">What sentiment is expressed in responses?</span></li>
+<li><span class="silver">etc.</span></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-39">
+<hgroup>
+  <h2>Clustering: Dendrogram</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/img/genericDendro.jpg"/></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-40" style="background:;">
+  <hgroup>
+    <h2>Clustering: Dendrogram</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Objectives</h3>
+
+<p><img height=300 width=550 src="assets/img/genericDendro.jpg"/></p>
+
+<ul class = "build incremental">
+<li>Organise data</li>
+<li>Simplify data</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-41" style="background:;">
+  <hgroup>
+    <h2>Clustering: Dendrogram</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Objectives</h3>
+
+<ul>
+<li><p>Organise data</p>
+
+<ul>
+<li>Use and reveal inherent relationships</li>
+<li>Derive relationships using similarity measures</li>
+</ul></li>
+<li><p>Simplify data</p>
+
+<ul>
+<li>Especially for large datasets</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-42" style="background:;">
+  <hgroup>
+    <h2>Clustering: Dendrogram</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Objectives</h3>
+
+<ul>
+<li><p>Organise data</p>
+
+<ul>
+<li>Use and reveal <span class="red">inherent relationships</span></li>
+<li>Derive <span clss="red">relationships</span> using <span class="red">similarity measures </span></li>
+</ul></li>
+<li><p>Simplify data</p>
+
+<ul>
+<li>Especially for large datasets</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-43" style="background:;">
+  <hgroup>
+    <h2>Clustering</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><p>Clustering algorithms detect relationships inherent in data by detecting statistical patterns</p>
+
+<ul>
+<li>Hierarchical (Dendrograms)</li>
+<li>Non-Hierarchical (Associative Word Clouds)</li>
+</ul></li>
+<li><p>Usually represent patterns by using distance measures</p>
+
+<ul>
+<li>For example, Euclidean/ordinary distance</li>
+<li>Other distance measures do exist</li>
+</ul></li>
+<li><p>Place data in a Euclidean space</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-44">
+<hgroup>
+  <h2>Clustering</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p><img src="assets/img/euclidSpace.png"/></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-45" style="background:;">
+  <hgroup>
+    <h2>Clustering</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Clustering algorithms detect relationships inherent in data by detecting statistical patterns</p>
+
+<ul>
+<li>Hierarchical (Dendrograms)</li>
+<li>Non-Hierarchical (Modified Word Clouds)</li>
+</ul></li>
+<li><p>Usually represent patterns by using distance measures</p>
+
+<ul>
+<li>For example, Euclidean (ordinary) distance</li>
+<li>Others: Manhattan, Mahalanobis, etc.</li>
+</ul></li>
+<li><p>Place data in a Euclidean space</p></li>
+</ul>
+
+<ul class = "build incremental">
+<li><p>Use Similarity measures to identify groups, intra-group and inter-group linkages</p>
+
+<ul>
+<li>Single-Linkage, Average-Linkage, etc.</li>
+<li>Cosine, Jaccuard, etc.</li>
+</ul></li>
+<li><p><b>Similar data tend to lie close to each other</b></p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-46" style="background:;">
+  <hgroup>
+    <h2>Clustering: Results</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Dendrogram</h3>
+
+<p><img height=400 width=800 src="assets/img/hierarchical.PNG"/></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-47" style="background:;">
+  <hgroup>
+    <h2>Clustering: Results</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Dendrogram</h3>
+
+<ul class = "build incremental">
+<li>Hierarchies of groups identified</li>
+<li>Largest and smallest clusters identified</li>
+<li>Summary of data realised
+<p> <b>But</b> </p></li>
+<li>Frequencies of terms not represented</li>
+<li>Possibly gets hard to interpret with large datasets</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-48">
+<hgroup>
+  <h2>Clustering: Results</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<h3>Associative Word Clouds</h3>
+
+<p><img height=400 width=800 src="assets/img/assocCloud1.PNG"/></p>
+
+<ul class = "build incremental">
+<li>Associative Word clouds display Term Frequency and relationships</li>
+</ul>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-49">
+<hgroup>
+  <h2>Clustering: Results</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<h3>Associative Word Clouds</h3>
+
+<p><img height=400 width=800 src="assets/img/assocCloud2.PNG"/></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-50">
+<hgroup>
+  <h2>Clustering: Results</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<h3>Associative Word Clouds</h3>
+
+<p><img height=400 width=800 src="assets/img/assocCloud3.PNG"/></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-51" style="background:;">
+  <hgroup>
+    <h2>Section Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><p><b> Clustering Objectives:</b></p>
+
+<ul>
+<li>Organise data</li>
+<li>Identify inherent relationships/patterns in data using similarity measures</li>
+<li>Use the relationships to group data </li>
+</ul></li>
+<li><p>After Clustering:</p>
+
+<ul>
+<li>Data in one group is most similar to data in the same group</li>
+<li>Data in one group is dissimilar from data in other groups</li>
+</ul></li>
+<li><p>Clustering Graphics:</p>
+
+<ul>
+<li>Dendrograms</li>
+<li>Associative Word Clouds</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-52" style="background:;">
+  <hgroup>
+    <h2>Qualitative Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Research Questions</h3>
+
+<ul>
+<li>Which are the most frequent/important words?</li>
+<li>What are the contents of the responses?</li>
+<li>Which responses are similar/dissimilar?</li>
+<li>Which words are related/unrelated?</li>
+<li>What sentiment is expressed in responses?</li>
+<li>etc.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-53" style="background:;">
+  <hgroup>
+    <h2>Qualitative Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Research Questions</h3>
+
+<ul>
+<li><span color="silver">Which are the most frequent/important words?</span></li>
+<li><span color="silver">What are the contents of the responses?</span></li>
+<li><span color="silver">Which responses are similar/dissimilar?</span></li>
+<li><span color="silver">Which words are related/unrelated?</span></li>
+<li><b> What sentiment is expressed in responses? </b></li>
+<li><span color="silver">etc. </span></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark" id="slide-54" style="background:;">
+  <hgroup>
+    <h2>Sentiment Analysis</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-55" style="background:;">
+  <hgroup>
+    <h2>Sentiment Analysis</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Responses may express sentiments</li>
+<li>What do &#39;negative&#39; responses state about policing?</li>
+<li>What do &#39;positive&#39; responses state about policing?</li>
+<li>What do respondents complain about?</li>
+<li>What do respondents praise?</li>
+<li>Analyse popularity of policies</li>
+<li>etc.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-56" style="background:;">
+  <hgroup>
+    <h2>Sentiment Analysis</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>How?</h3>
+
+<ol class = "build incremental">
+<li><p>Supervised Approach</p>
+
+<ul>
+<li>Use a classifier</li>
+<li>Train it</li>
+<li>Test it</li>
+</ul></li>
+<li><p>Unsupervised Approach</p>
+
+<ul>
+<li>Formulate a dictionary of &#39;Negative&#39; and &#39;Positive&#39; words</li>
+<li>Look for the dictionary words in responses</li>
+</ul></li>
+<li><p>Unsupervised + Heuristics Approach</p>
+
+<ul>
+<li>Formulate a dictionary of &#39;Negative&#39; and &#39;Positive&#39; words and Grammatical rules</li>
+<li>Look for dictionary words + grammatical rules in responses</li>
+</ul></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-57" style="background:;">
+  <hgroup>
+    <h2>Sentiment Analysis: Supervised</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Extract a sufficient number of responses from original data</li>
+<li>Partition the extracted data into &#39;Training&#39; and &#39;Testing&#39; samples
+
+<ul>
+<li>\[Dataset_{Complete} (2000 responses)\]</li>
+<li>\[Dataset_{Train} (1200 responses) \subset Dataset_{Complete}\]</li>
+<li>\[Dataset_{Test} (800 responses) \subset Dataset_{Complete}\]</li>
+</ul></li>
+<li>Label the Training and Testing samples for sentiment</li>
+<li>Train a classifier (mathematical model) on Training samples for sentiment</li>
+<li>Test the trained classifier on Testing samples and report accuracy</li>
+<li>Deploy for use on unlabelled, new data.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-58" style="background:;">
+  <hgroup>
+    <h2>Sentiment Analysis: Unsupervised</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Generally:</p>
+
+<ul class = "build incremental">
+<li>Formulate/download a dictionary of words pre-labelled for sentiment</li>
+<li>Possibly formulate different dictionaries for nouns, adjectives, etc.</li>
+<li>Check for presence of &#39;Positive&#39; or &#39;Negative&#39; words in responses</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-59" style="background:;">
+  <hgroup>
+    <h2>Sentiment Analysis: Unsupervised + Heuristics</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Formulate/download a dictionary of words pre-labelled for sentiment</li>
+<li>Possibly formulate different dictionaries for nouns, adjectives, etc</li>
+<li>Formulate and incorporate heuristics/rules for Grammar</li>
+<li>Check for presence of &#39;Positive&#39; or &#39;Negative&#39; words in responses</li>
+<li>Incorporate heuristics to make Sentiment tagging of words extensible
+
+<ul>
+<li>Positive/Negative Adjectives would affect Nouns</li>
+<li>Adverbs would affect Verbs</li>
+<li>etc.</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-60">
+<hgroup>
+  <h2>Sentiment Analysis: Results</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<p>Results of Sentiment Analysis + Phrase clouds = Negative Phrase Cloud</p>
+
+<p><img height=350 width=700 src="assets/img/negCloud.PNG"/></p>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-61">
+<hgroup>
+  <h2>Sentiment Analysis: Results</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<h3>Negative Phrase Cloud</h3>
+
+<p><img height=350 width=700 src="assets/img/negCloud.PNG"/></p>
+
+<ul>
+<li>Highlights phrases occurring in &#39;Negative&#39; responses</li>
+<li>Scales phrase size according to frequency</li>
+</ul>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-62">
+<hgroup>
+  <h2>Sentiment Analysis: Results</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<h3>Negative Phrase Cloud</h3>
+
+<p><img height=350 width=700 src="assets/img/negCloud.PNG"/></p>
+
+<ul>
+<li>Council Tax</li>
+<li>Anti-Social behaviour</li>
+</ul>
+
+</article>
+<!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-63" style="background:;">
+  <hgroup>
+    <h2>Section Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Sentiments may be expressed in responses</li>
+</ul>
+
+<ul class = "build incremental">
+<li><b>Sentiment Analysis Objective:</b>
+
+<ul>
+<li>Identify sentiments from responses</li>
+</ul></li>
+<li>Identification can be useful in many ways
+
+<ul>
+<li>Identify complaints</li>
+<li>Identify praises</li>
+<li>Measure popularity of policies</li>
+</ul></li>
+<li>Techniques for Sentiment Analysis:
+
+<ul>
+<li>Supervised</li>
+<li>Unsupervised</li>
+<li>Unsupervised + Heuristics</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue dark" id="slide-64" style="background:;">
+  <hgroup>
+    <h2>Further Research Directions</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-65" style="background:;">
+  <hgroup>
+    <h2>Further Research in Text Mining</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Utilise:</p>
+
+<ul class = "build incremental">
+<li>Twitter data
+
+<ul>
+<li>Sometimes active</li>
+</ul></li>
+<li>Facebook data
+
+<ul>
+<li>Sometimes active</li>
+</ul></li>
+<li>Local newspapers&#39; data
+
+<ul>
+<li>Active</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-66" style="background:;">
+  <hgroup>
+    <h2>Further Research in Sentiment Analysis</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Utilise:</p>
+
+<ul class = "build incremental">
+<li>Twitter data</li>
+<li>Facebook data</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-67" style="background:;">
+  <hgroup>
+    <h2>Further Research in Sentiment Analysis</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Combine demographics with Sentiment Analysis
+
+<ul>
+<li>Is there a relationship between Age and Sentiment?</li>
+<li>Can clusters be formed on Demographics + Sentiment?</li>
+</ul></li>
+<li>How do Sentiments change over a period of time, x?
+
+<ul>
+<li>Is there a trend in the shift of Sentiments?</li>
+<li>Do Sentiments change due to introduction of policies?</li>
+</ul></li>
+<li>Can ideological differences be identified?</li>
+<li>Can political affiliations be determined?</li>
+<li>etc. </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-68" style="background:;">
+  <hgroup>
+    <h2>Further Research in Social Network Analysis</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Utilise Twitter data</li>
+<li>Utilise Facebook data</li>
+<li>Identify types of users connected to OPCC on Twitter</li>
+<li>Combine with Sentiment Analysis
+
+<ul>
+<li>Opinion Diffusion</li>
+</ul></li>
+<li>etc.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-69" style="background:;">
+  <hgroup>
+    <h2>A Prototype Textual Analytics Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Supports basic Text Mining Operations
+
+<ul>
+<li>Data Pre-processing</li>
+<li>Feature Generation &amp; Weighting</li>
+<li>Clustering</li>
+<li>Associative Word Clouds</li>
+<li>Network of Words</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-70" style="background:;">
+  <hgroup>
+    <h2>A Prototype Textual Analytics Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Limitations
+
+<ul>
+<li>Memory constraints</li>
+<li>Only 1 corpus per analysis</li>
+<li>Approximately 2000 words/terms supported</li>
+<li>3000-4000 documents supported</li>
+<li>Requires R and Java</li>
+<li>Other Text Mining operations not supported</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-71" style="background:;">
+  <hgroup>
+    <h2>Thanks to</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Mr. Peter Haystead for inviting to the OPCC, Norfolk</li>
+<li>Dr. Beatriz De La Iglesia for lectures on Data and Text Mining</li>
+<li><a href="https://github.com/ramnathv">Ramnath Vaidyanathan</a> for <a href="https://github.com/ramnathv/slidify">Slidify</a></li>
+<li><a href="http://www.rstudio.com/">RStudio</a> for <a href="http://www.rstudio.com/shiny/">Shiny</a></li>
+<li><a href="https://github.com/hadley">Hadley Wickham</a> for <a href="https://github.com/hadley/ggplot2">GGPlot2</a></li>
+<li>Ingo Feirener, Kurt Hornik for <a href="http://cran.r-project.org/web/packages/tm/index.html">Tm</a></li>
+<li>Igraph authors, for <a href="http://cran.r-project.org/web/packages/igraph/index.html">Igraph</a></li>
+<li><a href="http://drewconway.com/">Drew Conway</a>, for various <a href="https://github.com/drewconway">tutorials</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Quantitative Data'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Qualitative Data'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Qualitative Data'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Qualitative Data'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title=''>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Qualitative Data'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Qualitative Data is different...'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Text Mining!'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='But: How?'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Text Mining Framework'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Phase 1: Text Preprocessing'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Phase 1: Text Preprocessing'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Phase 1: Stopwords &amp; Thesaurus'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Phase 1: Stopwords &amp; Thesaurus'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Phase 1: Stopwords &amp; Thesaurus'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Section Summary'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Phase 2: Feature Generation'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Phase 2: Feature Generation'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Phase 2: Term-Document Matrix (Binary)'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Phase 2: Term-Document Matrix (Binary)'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Phase 2: Term-Document Matrix (Term Frequency)'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Phase 2: Term-Document Matrix (Term Frequency)'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Phase 2: Term-Document Matrix (Tf-Idf)'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Phase 2: Term-Document Matrix (Tf-Idf)'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Phase 2: Term-Affiliations Matrix'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Phase 2: Term-Affiliations Matrix'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='Section Summary'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Phase 3: Feature Selection'>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='Phase 3: Feature Selection'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Phase 3: Feature Selection'>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Phase 3: Feature Selection'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='Phase 3: Feature Selection'>
+         33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='Phase 3: Feature Selection'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='Section Summary'>
+         35
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='Phase 4: Text Mining Operations'>
+         36
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='Text Mining: Research Questions'>
+         37
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='Text Mining: Research Questions'>
+         38
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='Clustering: Dendrogram'>
+         39
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title='Clustering: Dendrogram'>
+         40
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=41 title='Clustering: Dendrogram'>
+         41
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=42 title='Clustering: Dendrogram'>
+         42
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=43 title='Clustering'>
+         43
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=44 title='Clustering'>
+         44
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=45 title='Clustering'>
+         45
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=46 title='Clustering: Results'>
+         46
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=47 title='Clustering: Results'>
+         47
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=48 title='Clustering: Results'>
+         48
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=49 title='Clustering: Results'>
+         49
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=50 title='Clustering: Results'>
+         50
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=51 title='Section Summary'>
+         51
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=52 title='Qualitative Data'>
+         52
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=53 title='Qualitative Data'>
+         53
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=54 title='Sentiment Analysis'>
+         54
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=55 title='Sentiment Analysis'>
+         55
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=56 title='Sentiment Analysis'>
+         56
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=57 title='Sentiment Analysis: Supervised'>
+         57
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=58 title='Sentiment Analysis: Unsupervised'>
+         58
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=59 title='Sentiment Analysis: Unsupervised + Heuristics'>
+         59
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=60 title='Sentiment Analysis: Results'>
+         60
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=61 title='Sentiment Analysis: Results'>
+         61
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=62 title='Sentiment Analysis: Results'>
+         62
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=63 title='Section Summary'>
+         63
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=64 title='Further Research Directions'>
+         64
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=65 title='Further Research in Text Mining'>
+         65
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=66 title='Further Research in Sentiment Analysis'>
+         66
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=67 title='Further Research in Sentiment Analysis'>
+         67
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=68 title='Further Research in Social Network Analysis'>
+         68
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=69 title='A Prototype Textual Analytics Application'>
+         69
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=70 title='A Prototype Textual Analytics Application'>
+         70
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=71 title='Thanks to'>
+         71
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
